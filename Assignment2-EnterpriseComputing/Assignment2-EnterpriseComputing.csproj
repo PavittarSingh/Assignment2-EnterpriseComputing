@@ -69,6 +69,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Other-Accounts\Blackboard.aspx" />
+    <Content Include="Account\Other-Accounts\Library.aspx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -84,6 +86,7 @@
     <Content Include="Img\logo-Home.png" />
     <Content Include="Img\Slider\1.jpg" />
     <Content Include="Img\Slider\2.jpg" />
+    <Content Include="other\Policies.aspx" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -142,6 +145,20 @@
     <Compile Include="Account\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Account\Other-Accounts\Blackboard.aspx.cs">
+      <DependentUpon>Blackboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Other-Accounts\Blackboard.aspx.designer.cs">
+      <DependentUpon>Blackboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Other-Accounts\Library.aspx.cs">
+      <DependentUpon>Library.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Other-Accounts\Library.aspx.designer.cs">
+      <DependentUpon>Library.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Account\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -166,6 +183,13 @@
     </Compile>
     <Compile Include="Main.Master.designer.cs">
       <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="other\Policies.aspx.cs">
+      <DependentUpon>Policies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="other\Policies.aspx.designer.cs">
+      <DependentUpon>Policies.aspx</DependentUpon>
     </Compile>
     <Compile Include="Programs\Full-Times\Full-Time-Programs.aspx.cs">
       <DependentUpon>Full-Time-Programs.aspx</DependentUpon>

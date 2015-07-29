@@ -11,7 +11,16 @@ namespace Assignment2_EnterpriseComputing
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!HttpContext.Current.User.Identity.IsAuthenticated)
+            {
+                PrivateNav.Visible = false;
+                PublicNav.Visible = true;
+            }
+            else
+            {
+                PrivateNav.Visible = true;
+                PublicNav.Visible = false;
+            }
         }
     }
 }

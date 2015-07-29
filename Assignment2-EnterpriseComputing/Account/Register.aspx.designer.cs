@@ -13,48 +13,30 @@ namespace Assignment2_EnterpriseComputing.Account {
     public partial class Register {
         
         /// <summary>
-        /// StatusMessage control.
+        /// CreateUserWizard1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal StatusMessage;
+        protected global::System.Web.UI.WebControls.CreateUserWizard CreateUserWizard1;
         
         /// <summary>
-        /// UserName control.
+        /// CreateUserWizardStep1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox UserName;
+        protected global::System.Web.UI.WebControls.CreateUserWizardStep CreateUserWizardStep1;
         
         /// <summary>
-        /// UserEmail control.
+        /// CompleteWizardStep1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox UserEmail;
-        
-        /// <summary>
-        /// Password control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Password;
-        
-        /// <summary>
-        /// ConfirmPassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ConfirmPassword;
+        protected global::System.Web.UI.WebControls.CompleteWizardStep CompleteWizardStep1;
     }
 }

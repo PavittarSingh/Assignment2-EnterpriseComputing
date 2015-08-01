@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Assignment2_EnterpriseComputing.Account.Other_Accounts
+namespace Assignment2_EnterpriseComputing.Pages
 {
-    public partial class Library : System.Web.UI.Page
+    public partial class Banner : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

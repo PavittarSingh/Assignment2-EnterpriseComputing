@@ -16,10 +16,12 @@ namespace Assignment2_EnterpriseComputing
                 PrivateNav.Visible = false;
                 PublicNav.Visible = true;
             }
+            
             else
             {
                 PrivateNav.Visible = true;
                 PublicNav.Visible = false;
+             
             }
         }
     }

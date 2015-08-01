@@ -3,8 +3,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container3">
-        <h4 style="font-size: medium">Register a new user</h4>
-        <hr />
+        <h4 style="font-size: medium"><i class="fa fa-user fa-fw"></i>Register</h4>
+       
         <p>
             <asp:Literal runat="server" ID="StatusMessage" />
         </p>

@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Assignment2_EnterpriseComputing.Account.Other_Accounts
+namespace Assignment2_EnterpriseComputing.Pages
 {
 
 
-    public partial class Blackboard
+    public partial class Banner
     {
     }
 }

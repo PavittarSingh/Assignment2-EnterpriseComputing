@@ -90,6 +90,8 @@
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -108,6 +110,23 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <EntityDeploy Include="Models\BannerDatabse.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BannerDatabse.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\BannerDatabse.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BannerDatabse.edmx</DependentUpon>
+      <LastGenOutput>BannerDatabse.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\BannerDatabse.edmx.diagram">
+      <DependentUpon>BannerDatabse.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\BannerDatabse.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BannerDatabse.edmx</DependentUpon>
+      <LastGenOutput>BannerDatabse.cs</LastGenOutput>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -117,8 +136,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account\Login.aspx" />
-    <Content Include="Account\Other-Accounts\Blackboard.aspx" />
-    <Content Include="Account\Other-Accounts\Library.aspx" />
     <Content Include="Account\Logout.aspx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -147,6 +164,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Pages\Banner.aspx" />
     <Content Include="Pages\Welcome.aspx" />
     <Content Include="Programs\Full-Times\Full-Time-Programs.aspx" />
     <Content Include="Programs\Part-Times\Part-Time-Programs.aspx" />
@@ -201,20 +219,6 @@
     <Compile Include="Account\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Account\Other-Accounts\Blackboard.aspx.cs">
-      <DependentUpon>Blackboard.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\Other-Accounts\Blackboard.aspx.designer.cs">
-      <DependentUpon>Blackboard.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\Other-Accounts\Library.aspx.cs">
-      <DependentUpon>Library.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\Other-Accounts\Library.aspx.designer.cs">
-      <DependentUpon>Library.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Account\Logout.aspx.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -247,6 +251,27 @@
     <Compile Include="Main.Master.designer.cs">
       <DependentUpon>Main.Master</DependentUpon>
     </Compile>
+    <Compile Include="Models\BannerDatabse.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BannerDatabse.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BannerDatabse.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BannerDatabse.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BannerDatabse.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BannerDatabse.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Cours.cs">
+      <DependentUpon>BannerDatabse.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Department.cs">
+      <DependentUpon>BannerDatabse.tt</DependentUpon>
+    </Compile>
     <Compile Include="other\Policies.aspx.cs">
       <DependentUpon>Policies.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -260,6 +285,13 @@
     </Compile>
     <Compile Include="other\TermsConditons.aspx.designer.cs">
       <DependentUpon>TermsConditons.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Banner.aspx.cs">
+      <DependentUpon>Banner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Banner.aspx.designer.cs">
+      <DependentUpon>Banner.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Welcome.aspx.cs">
       <DependentUpon>Welcome.aspx</DependentUpon>
@@ -301,7 +333,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

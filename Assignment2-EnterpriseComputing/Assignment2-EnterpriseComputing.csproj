@@ -110,22 +110,45 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="Models\BannerDatabaseModel.edmx">
+    <EntityDeploy Include="Models\Banner01.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>BannerDatabaseModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>Banner01.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\BannerDatabaseModel.Context.tt">
+    <Content Include="Departments\Default.aspx" />
+    <Content Include="Departments\Delete.aspx" />
+    <Content Include="Departments\Details.aspx" />
+    <Content Include="Departments\Edit.aspx" />
+    <Content Include="Departments\Insert.aspx" />
+    <Content Include="DynamicData\FieldTemplates\Boolean.ascx" />
+    <Content Include="DynamicData\FieldTemplates\Boolean_Edit.ascx" />
+    <Content Include="DynamicData\FieldTemplates\Children.ascx" />
+    <Content Include="DynamicData\FieldTemplates\Children_Insert.ascx" />
+    <Content Include="DynamicData\FieldTemplates\DateTime.ascx" />
+    <Content Include="DynamicData\FieldTemplates\DateTime_Edit.ascx" />
+    <Content Include="DynamicData\FieldTemplates\Decimal_Edit.ascx" />
+    <Content Include="DynamicData\FieldTemplates\EmailAddress.ascx" />
+    <Content Include="DynamicData\FieldTemplates\Enumeration.ascx" />
+    <Content Include="DynamicData\FieldTemplates\Enumeration_Edit.ascx" />
+    <Content Include="DynamicData\FieldTemplates\ForeignKey.ascx" />
+    <Content Include="DynamicData\FieldTemplates\ForeignKey_Edit.ascx" />
+    <Content Include="DynamicData\FieldTemplates\Integer_Edit.ascx" />
+    <Content Include="DynamicData\FieldTemplates\MultilineText_Edit.ascx" />
+    <Content Include="DynamicData\FieldTemplates\Text.ascx" />
+    <Content Include="DynamicData\FieldTemplates\Text_Edit.ascx" />
+    <Content Include="DynamicData\FieldTemplates\Url.ascx" />
+    <Content Include="DynamicData\FieldTemplates\Url_Edit.ascx" />
+    <Content Include="Models\Banner01.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BannerDatabaseModel.edmx</DependentUpon>
-      <LastGenOutput>BannerDatabaseModel.Context.cs</LastGenOutput>
+      <DependentUpon>Banner01.edmx</DependentUpon>
+      <LastGenOutput>Banner01.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\BannerDatabaseModel.edmx.diagram">
-      <DependentUpon>BannerDatabaseModel.edmx</DependentUpon>
+    <Content Include="Models\Banner01.edmx.diagram">
+      <DependentUpon>Banner01.edmx</DependentUpon>
     </Content>
-    <Content Include="Models\BannerDatabaseModel.tt">
+    <Content Include="Models\Banner01.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BannerDatabaseModel.edmx</DependentUpon>
-      <LastGenOutput>BannerDatabaseModel.cs</LastGenOutput>
+      <DependentUpon>Banner01.edmx</DependentUpon>
+      <LastGenOutput>Banner01.cs</LastGenOutput>
     </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -164,7 +187,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Pages\department-details.aspx" />
     <Content Include="Pages\Department.aspx" />
     <Content Include="Programs\Full-Times\Full-Time-Programs.aspx" />
     <Content Include="Programs\Part-Times\Part-Time-Programs.aspx" />
@@ -241,6 +263,167 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Departments\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Departments\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Departments\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Departments\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Departments\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Departments\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Departments\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Departments\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Departments\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Departments\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Boolean.ascx.cs">
+      <DependentUpon>Boolean.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Boolean.ascx.designer.cs">
+      <DependentUpon>Boolean.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Boolean_Edit.ascx.cs">
+      <DependentUpon>Boolean_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Boolean_Edit.ascx.designer.cs">
+      <DependentUpon>Boolean_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Children.ascx.cs">
+      <DependentUpon>Children.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Children.ascx.designer.cs">
+      <DependentUpon>Children.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Children_Insert.ascx.cs">
+      <DependentUpon>Children_Insert.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Children_Insert.ascx.designer.cs">
+      <DependentUpon>Children_Insert.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\DateTime.ascx.cs">
+      <DependentUpon>DateTime.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\DateTime.ascx.designer.cs">
+      <DependentUpon>DateTime.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\DateTime_Edit.ascx.cs">
+      <DependentUpon>DateTime_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\DateTime_Edit.ascx.designer.cs">
+      <DependentUpon>DateTime_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Decimal_Edit.ascx.cs">
+      <DependentUpon>Decimal_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Decimal_Edit.ascx.designer.cs">
+      <DependentUpon>Decimal_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\EmailAddress.ascx.cs">
+      <DependentUpon>EmailAddress.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\EmailAddress.ascx.designer.cs">
+      <DependentUpon>EmailAddress.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Enumeration.ascx.cs">
+      <DependentUpon>Enumeration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Enumeration.ascx.designer.cs">
+      <DependentUpon>Enumeration.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Enumeration_Edit.ascx.cs">
+      <DependentUpon>Enumeration_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Enumeration_Edit.ascx.designer.cs">
+      <DependentUpon>Enumeration_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\ForeignKey.ascx.cs">
+      <DependentUpon>ForeignKey.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\ForeignKey.ascx.designer.cs">
+      <DependentUpon>ForeignKey.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\ForeignKey_Edit.ascx.cs">
+      <DependentUpon>ForeignKey_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\ForeignKey_Edit.ascx.designer.cs">
+      <DependentUpon>ForeignKey_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Integer_Edit.ascx.cs">
+      <DependentUpon>Integer_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Integer_Edit.ascx.designer.cs">
+      <DependentUpon>Integer_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\MultilineText_Edit.ascx.cs">
+      <DependentUpon>MultilineText_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\MultilineText_Edit.ascx.designer.cs">
+      <DependentUpon>MultilineText_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Text.ascx.cs">
+      <DependentUpon>Text.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Text.ascx.designer.cs">
+      <DependentUpon>Text.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Text_Edit.ascx.cs">
+      <DependentUpon>Text_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Text_Edit.ascx.designer.cs">
+      <DependentUpon>Text_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Url.ascx.cs">
+      <DependentUpon>Url.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Url.ascx.designer.cs">
+      <DependentUpon>Url.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Url_Edit.ascx.cs">
+      <DependentUpon>Url_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Url_Edit.ascx.designer.cs">
+      <DependentUpon>Url_Edit.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -251,29 +434,23 @@
     <Compile Include="Main.Master.designer.cs">
       <DependentUpon>Main.Master</DependentUpon>
     </Compile>
-    <Compile Include="Models\BannerDatabaseModel.Context.cs">
+    <Compile Include="Models\Banner01.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BannerDatabaseModel.Context.tt</DependentUpon>
+      <DependentUpon>Banner01.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\BannerDatabaseModel.cs">
+    <Compile Include="Models\Banner01.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BannerDatabaseModel.tt</DependentUpon>
+      <DependentUpon>Banner01.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\BannerDatabaseModel.Designer.cs">
+    <Compile Include="Models\Banner01.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BannerDatabaseModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Cours.cs">
-      <DependentUpon>BannerDatabaseModel.tt</DependentUpon>
+      <DependentUpon>Banner01.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Department.cs">
-      <DependentUpon>BannerDatabaseModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Instructor.cs">
-      <DependentUpon>BannerDatabaseModel.tt</DependentUpon>
+      <DependentUpon>Banner01.tt</DependentUpon>
     </Compile>
     <Compile Include="other\Policies.aspx.cs">
       <DependentUpon>Policies.aspx</DependentUpon>
@@ -288,13 +465,6 @@
     </Compile>
     <Compile Include="other\TermsConditons.aspx.designer.cs">
       <DependentUpon>TermsConditons.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\department-details.aspx.cs">
-      <DependentUpon>department-details.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\department-details.aspx.designer.cs">
-      <DependentUpon>department-details.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Department.aspx.cs">
       <DependentUpon>Department.aspx</DependentUpon>

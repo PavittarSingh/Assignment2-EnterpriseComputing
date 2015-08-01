@@ -25,8 +25,6 @@ namespace Assignment2_EnterpriseComputing.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Cours> Courses { get; set; }
         public virtual DbSet<Department> Departments { get; set; }
-        public virtual DbSet<Instructor> Instructors { get; set; }
     }
 }

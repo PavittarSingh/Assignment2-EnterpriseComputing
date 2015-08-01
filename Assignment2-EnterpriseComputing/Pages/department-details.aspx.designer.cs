@@ -11,7 +11,7 @@ namespace Assignment2_EnterpriseComputing.Pages
 {
 
 
-    public partial class Welcome
+    public partial class department_details
     {
     }
 }

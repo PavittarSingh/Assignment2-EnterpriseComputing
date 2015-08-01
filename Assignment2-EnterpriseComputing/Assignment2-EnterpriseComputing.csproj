@@ -110,22 +110,22 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="Models\BannerDatabse.edmx">
+    <EntityDeploy Include="Models\BannerDatabaseModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>BannerDatabse.Designer.cs</LastGenOutput>
+      <LastGenOutput>BannerDatabaseModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\BannerDatabse.Context.tt">
+    <Content Include="Models\BannerDatabaseModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BannerDatabse.edmx</DependentUpon>
-      <LastGenOutput>BannerDatabse.Context.cs</LastGenOutput>
+      <DependentUpon>BannerDatabaseModel.edmx</DependentUpon>
+      <LastGenOutput>BannerDatabaseModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\BannerDatabse.edmx.diagram">
-      <DependentUpon>BannerDatabse.edmx</DependentUpon>
+    <Content Include="Models\BannerDatabaseModel.edmx.diagram">
+      <DependentUpon>BannerDatabaseModel.edmx</DependentUpon>
     </Content>
-    <Content Include="Models\BannerDatabse.tt">
+    <Content Include="Models\BannerDatabaseModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BannerDatabse.edmx</DependentUpon>
-      <LastGenOutput>BannerDatabse.cs</LastGenOutput>
+      <DependentUpon>BannerDatabaseModel.edmx</DependentUpon>
+      <LastGenOutput>BannerDatabaseModel.cs</LastGenOutput>
     </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -164,8 +164,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Pages\Banner.aspx" />
-    <Content Include="Pages\Welcome.aspx" />
+    <Content Include="Pages\department-details.aspx" />
+    <Content Include="Pages\Department.aspx" />
     <Content Include="Programs\Full-Times\Full-Time-Programs.aspx" />
     <Content Include="Programs\Part-Times\Part-Time-Programs.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -251,26 +251,29 @@
     <Compile Include="Main.Master.designer.cs">
       <DependentUpon>Main.Master</DependentUpon>
     </Compile>
-    <Compile Include="Models\BannerDatabse.Context.cs">
+    <Compile Include="Models\BannerDatabaseModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BannerDatabse.Context.tt</DependentUpon>
+      <DependentUpon>BannerDatabaseModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\BannerDatabse.cs">
+    <Compile Include="Models\BannerDatabaseModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BannerDatabse.tt</DependentUpon>
+      <DependentUpon>BannerDatabaseModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\BannerDatabse.Designer.cs">
+    <Compile Include="Models\BannerDatabaseModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BannerDatabse.edmx</DependentUpon>
+      <DependentUpon>BannerDatabaseModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Cours.cs">
-      <DependentUpon>BannerDatabse.tt</DependentUpon>
+      <DependentUpon>BannerDatabaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Department.cs">
-      <DependentUpon>BannerDatabse.tt</DependentUpon>
+      <DependentUpon>BannerDatabaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Instructor.cs">
+      <DependentUpon>BannerDatabaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="other\Policies.aspx.cs">
       <DependentUpon>Policies.aspx</DependentUpon>
@@ -286,19 +289,19 @@
     <Compile Include="other\TermsConditons.aspx.designer.cs">
       <DependentUpon>TermsConditons.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Banner.aspx.cs">
-      <DependentUpon>Banner.aspx</DependentUpon>
+    <Compile Include="Pages\department-details.aspx.cs">
+      <DependentUpon>department-details.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\Banner.aspx.designer.cs">
-      <DependentUpon>Banner.aspx</DependentUpon>
+    <Compile Include="Pages\department-details.aspx.designer.cs">
+      <DependentUpon>department-details.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Welcome.aspx.cs">
-      <DependentUpon>Welcome.aspx</DependentUpon>
+    <Compile Include="Pages\Department.aspx.cs">
+      <DependentUpon>Department.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\Welcome.aspx.designer.cs">
-      <DependentUpon>Welcome.aspx</DependentUpon>
+    <Compile Include="Pages\Department.aspx.designer.cs">
+      <DependentUpon>Department.aspx</DependentUpon>
     </Compile>
     <Compile Include="Programs\Full-Times\Full-Time-Programs.aspx.cs">
       <DependentUpon>Full-Time-Programs.aspx</DependentUpon>

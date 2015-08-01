@@ -13,10 +13,10 @@ namespace Assignment2_EnterpriseComputing.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class BannerDatabaseCinnection : DbContext
+    public partial class BannerDatabase01 : DbContext
     {
-        public BannerDatabaseCinnection()
-            : base("name=BannerDatabaseCinnection")
+        public BannerDatabase01()
+            : base("name=BannerDatabase01")
         {
         }
     
@@ -27,5 +27,6 @@ namespace Assignment2_EnterpriseComputing.Models
     
         public virtual DbSet<Cours> Courses { get; set; }
         public virtual DbSet<Department> Departments { get; set; }
+        public virtual DbSet<Instructor> Instructors { get; set; }
     }
 }

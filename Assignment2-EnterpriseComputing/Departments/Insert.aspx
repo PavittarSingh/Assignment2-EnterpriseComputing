@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="DepartmentInsert" Language="C#" MasterPageFile="~/Main.Master" CodeBehind="Insert.aspx.cs" Inherits="Assignment2_EnterpriseComputing.Departments.Insert" %>
-<asp:Content runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
-     <div class="container3">
-    <div>
+<asp:Content runat="server" ContentPlaceHolderID="ContentPlaceholder1">
+     <div class =" container4">
 		<p>&nbsp;</p>
         <asp:FormView runat="server"
             ItemType="Assignment2_EnterpriseComputing.Models.Department" DefaultMode="Insert"
@@ -12,6 +11,7 @@
 				<legend>Insert Department</legend>
 		        <asp:ValidationSummary runat="server" CssClass="alert alert-danger" />
 						    <asp:DynamicControl Mode="Insert" DataField="Name" runat="server" />
+						    <asp:DynamicControl Mode="Insert" DataField="Duration" runat="server" />
 						    <asp:DynamicControl Mode="Insert" DataField="Budget" runat="server" />
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
@@ -23,5 +23,4 @@
             </InsertItemTemplate>
         </asp:FormView>
     </div>
-         </div>
 </asp:Content>

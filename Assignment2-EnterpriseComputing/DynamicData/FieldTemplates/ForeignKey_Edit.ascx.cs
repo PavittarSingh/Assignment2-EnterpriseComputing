@@ -11,7 +11,7 @@ using Assignment2_EnterpriseComputing.Models;
 namespace Assignment2_EnterpriseComputing {
     public partial class ForeignKey_EditField : System.Web.DynamicData.FieldTemplateUserControl {
 
-		protected Assignment2_EnterpriseComputing.Models.BannerDatabase01 _db = new Assignment2_EnterpriseComputing.Models.BannerDatabase01();
+        protected Assignment2_EnterpriseComputing.Models.Banner01 _db = new Assignment2_EnterpriseComputing.Models.Banner01();
 
 		public string DataTypeName { get; set; }
 

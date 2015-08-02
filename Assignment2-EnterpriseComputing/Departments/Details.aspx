@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="Department Details" Language="C#" MasterPageFile="~/Main.Master" CodeBehind="Details.aspx.cs" Inherits="Assignment2_EnterpriseComputing.Departments.Details" %>
-<asp:Content runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
-     <div class="container3">
+<asp:Content runat="server" ContentPlaceHolderID="ContentPlaceholder1">
+     <div class =" container4">
     <div>
 		<p>&nbsp;</p>
       
@@ -28,6 +28,14 @@
 								</div>
 								<div class="col-sm-4">
 									<asp:DynamicControl runat="server" DataField="Name" ID="Name" Mode="ReadOnly" />
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-2 text-right">
+									<strong>Duration</strong>
+								</div>
+								<div class="col-sm-4">
+									<asp:DynamicControl runat="server" DataField="Duration" ID="Duration" Mode="ReadOnly" />
 								</div>
 							</div>
 							<div class="row">

@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="DepartmentDelete" Language="C#" MasterPageFile="~/Main.Master" CodeBehind="Delete.aspx.cs" Inherits="Assignment2_EnterpriseComputing.Departments.Delete" %>
-<asp:Content runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
-     <div class="container3">
+<asp:Content runat="server" ContentPlaceHolderID="ContentPlaceholder1">
+     <div class =" container4">
     <div>
 		<p>&nbsp;</p>
         <h3>Are you sure want to delete this Department?</h3>
@@ -28,6 +28,14 @@
 								</div>
 								<div class="col-sm-4">
 									<asp:DynamicControl runat="server" DataField="Name" ID="Name" Mode="ReadOnly" />
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-2 text-right">
+									<strong>Duration</strong>
+								</div>
+								<div class="col-sm-4">
+									<asp:DynamicControl runat="server" DataField="Duration" ID="Duration" Mode="ReadOnly" />
 								</div>
 							</div>
 							<div class="row">

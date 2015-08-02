@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="DepartmentList" Language="C#" MasterPageFile="~/Main.Master" CodeBehind="Default.aspx.cs" Inherits="Assignment2_EnterpriseComputing.Departments.Default" %>
 <%@ Register TagPrefix="FriendlyUrls" Namespace="Microsoft.AspNet.FriendlyUrls" %>
-<asp:Content runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
-    <div class="container3">
+<asp:Content runat="server" ContentPlaceHolderID="ContentPlaceholder1">
+     <div class =" container4">
     <h2>Departments List</h2>
     <p>
         <asp:HyperLink runat="server" NavigateUrl="Insert" Text="Create new" />
@@ -23,6 +23,9 @@
 							</th>
                             <th>
 								<asp:LinkButton Text="Name" CommandName="Sort" CommandArgument="Name" runat="Server" />
+							</th>
+                            <th>
+								<asp:LinkButton Text="Duration" CommandName="Sort" CommandArgument="Duration" runat="Server" />
 							</th>
                             <th>
 								<asp:LinkButton Text="Budget" CommandName="Sort" CommandArgument="Budget" runat="Server" />
@@ -51,6 +54,9 @@
 								<asp:DynamicControl runat="server" DataField="Name" ID="Name" Mode="ReadOnly" />
 							</td>
 							<td>
+								<asp:DynamicControl runat="server" DataField="Duration" ID="Duration" Mode="ReadOnly" />
+							</td>
+							<td>
 								<asp:DynamicControl runat="server" DataField="Budget" ID="Budget" Mode="ReadOnly" />
 							</td>
                     <td>
@@ -62,6 +68,6 @@
             </ItemTemplate>
         </asp:ListView>
     </div>
-        </div>
+          </div>
 </asp:Content>
 

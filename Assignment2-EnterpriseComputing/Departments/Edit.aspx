@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="DepartmentEdit" Language="C#" MasterPageFile="~/Main.Master" CodeBehind="Edit.aspx.cs" Inherits="Assignment2_EnterpriseComputing.Departments.Edit" %>
-<asp:Content runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
-     <div class="container3">
-    <div>
+<asp:Content runat="server" ContentPlaceHolderID="ContentPlaceholder1">
+     <div class =" container4">
 		<p>&nbsp;</p>
         <asp:FormView runat="server"
             ItemType="Assignment2_EnterpriseComputing.Models.Department" DefaultMode="Edit" DataKeyNames="DepartmentID"
@@ -15,6 +14,7 @@
                     <legend>Edit Department</legend>
 					<asp:ValidationSummary runat="server" CssClass="alert alert-danger"  />                 
 						    <asp:DynamicControl Mode="Edit" DataField="Name" runat="server" />
+						    <asp:DynamicControl Mode="Edit" DataField="Duration" runat="server" />
 						    <asp:DynamicControl Mode="Edit" DataField="Budget" runat="server" />
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
@@ -26,6 +26,5 @@
             </EditItemTemplate>
         </asp:FormView>
     </div>
-         </div>
 </asp:Content>
 

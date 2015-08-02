@@ -13,10 +13,10 @@ namespace Assignment2_EnterpriseComputing.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class BannerDatabase01 : DbContext
+    public partial class Banner01 : DbContext
     {
-        public BannerDatabase01()
-            : base("name=BannerDatabase01")
+        public Banner01()
+            : base("name=Banner01")
         {
         }
     
@@ -25,6 +25,10 @@ namespace Assignment2_EnterpriseComputing.Models
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Courses> Courses { get; set; }
         public virtual DbSet<Department> Departments { get; set; }
+        public virtual DbSet<Enrollment> Enrollments { get; set; }
+        public virtual DbSet<Instructor> Instructors { get; set; }
+        public virtual DbSet<Student> Students { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace Assignment2_EnterpriseComputing.Departments
 {
     public partial class Edit : System.Web.UI.Page
     {
-		protected Assignment2_EnterpriseComputing.Models.BannerDatabase01 _db = new Assignment2_EnterpriseComputing.Models.BannerDatabase01();
+		protected Assignment2_EnterpriseComputing.Models.Banner01 _db = new Assignment2_EnterpriseComputing.Models.Banner01();
 
         protected void Page_Load(object sender, EventArgs e)
         {

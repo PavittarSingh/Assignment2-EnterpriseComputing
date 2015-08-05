@@ -1,18 +1,18 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="FT-Courses.aspx.cs" Inherits="Assignment2_EnterpriseComputing.ViewData.FT_Courses" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Programs.aspx.cs" Inherits="Assignment2_EnterpriseComputing.ViewData.Programs" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    
     <div class="container5">
-        <h3> Blue River College offering these availble Courses</h3>
+         <h3> Blue River College offering these availble Programs</h3>
     <hr>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="CourseID" DataSourceID="Banner01" ForeColor="#333333" GridLines="None" Height="292px" Width="933px" AllowSorting="True">
+
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="ProgramID" DataSourceID="Banner01" ForeColor="#333333" GridLines="None" Height="354px" Width="933px" AllowSorting="True">
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
             <Columns>
-                <asp:BoundField DataField="CourseID" HeaderText="CourseID" InsertVisible="False" ReadOnly="True" SortExpression="CourseID" />
-                <asp:BoundField DataField="Title" HeaderText="Title" SortExpression="Title" />
-                <asp:BoundField DataField="Credits" HeaderText="Credits" SortExpression="Credits" />
-                <asp:BoundField DataField="ProgramID" HeaderText="ProgramID" SortExpression="ProgramID" />
+                <asp:BoundField DataField="ProgramID" HeaderText="ProgramID" InsertVisible="False" ReadOnly="True" SortExpression="ProgramID" />
+                <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
+                <asp:BoundField DataField="Duration" HeaderText="Duration" SortExpression="Duration" />
+                <asp:BoundField DataField="Expendature" HeaderText="Expendature" SortExpression="Expendature" />
                 <asp:BoundField DataField="Types" HeaderText="Types" SortExpression="Types" />
             </Columns>
             <EditRowStyle BackColor="#999999" />
@@ -26,9 +26,6 @@
             <SortedDescendingCellStyle BackColor="#FFFDF8" />
             <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
         </asp:GridView>
-        
-        <asp:SqlDataSource ID="Banner01" runat="server" ConnectionString="<%$ ConnectionStrings:BannerDatabase01CS %>" SelectCommand="SELECT * FROM [Courses]"></asp:SqlDataSource>
-        
+        <asp:SqlDataSource ID="Banner01" runat="server" ConnectionString="<%$ ConnectionStrings:BannerDatabase01CS %>" SelectCommand="SELECT ProgramID, Name, Duration, Expendature, Types FROM Programs"></asp:SqlDataSource>
     </div>
-   
 </asp:Content>

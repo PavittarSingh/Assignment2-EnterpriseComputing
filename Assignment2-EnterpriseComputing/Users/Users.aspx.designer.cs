@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Assignment2_EnterpriseComputing.ViewData {
+namespace Assignment2_EnterpriseComputing.Users {
     
     
-    public partial class FT_Courses {
+    public partial class Users {
         
         /// <summary>
         /// GridView1 control.
@@ -22,12 +22,12 @@ namespace Assignment2_EnterpriseComputing.ViewData {
         protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
-        /// Banner01 control.
+        /// Users01 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource Banner01;
+        protected global::System.Web.UI.WebControls.SqlDataSource Users01;
     }
 }

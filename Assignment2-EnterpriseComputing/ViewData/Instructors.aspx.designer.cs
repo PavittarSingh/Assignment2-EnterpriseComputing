@@ -10,7 +10,7 @@
 namespace Assignment2_EnterpriseComputing.ViewData {
     
     
-    public partial class FT_Courses {
+    public partial class Instructors {
         
         /// <summary>
         /// GridView1 control.

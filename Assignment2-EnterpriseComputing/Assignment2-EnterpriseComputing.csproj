@@ -110,16 +110,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Courses\Default.aspx" />
-    <Content Include="Courses\Delete.aspx" />
-    <Content Include="Courses\Details.aspx" />
-    <Content Include="Courses\Edit.aspx" />
-    <Content Include="Courses\Insert.aspx" />
-    <Content Include="Departments\Default.aspx" />
-    <Content Include="Departments\Delete.aspx" />
-    <Content Include="Departments\Details.aspx" />
-    <Content Include="Departments\Edit.aspx" />
-    <Content Include="Departments\Insert.aspx" />
     <Content Include="DynamicData\FieldTemplates\Boolean.ascx" />
     <Content Include="DynamicData\FieldTemplates\Boolean_Edit.ascx" />
     <Content Include="DynamicData\FieldTemplates\Children.ascx" />
@@ -138,49 +128,27 @@
     <Content Include="DynamicData\FieldTemplates\Text_Edit.ascx" />
     <Content Include="DynamicData\FieldTemplates\Url.ascx" />
     <Content Include="DynamicData\FieldTemplates\Url_Edit.ascx" />
-    <EntityDeploy Include="Models\Banner01.edmx">
+    <Content Include="Img\Slider\1.jpg" />
+    <Content Include="Img\Slider\2.jpg" />
+    <Content Include="Img\Slider\3.jpg" />
+    <Content Include="Img\Slider\4.jpg" />
+    <Content Include="Img\Slider\5.jpg" />
+    <EntityDeploy Include="Models\BannerDatabase01.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Banner01.Designer.cs</LastGenOutput>
+      <LastGenOutput>BannerDatabase01.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Enrollments\Default.aspx" />
-    <Content Include="Enrollments\Delete.aspx" />
-    <Content Include="Enrollments\Details.aspx" />
-    <Content Include="Enrollments\Edit.aspx" />
-    <Content Include="Enrollments\Insert.aspx" />
-    <Content Include="Instructors\Default.aspx" />
-    <Content Include="Instructors\Delete.aspx" />
-    <Content Include="Instructors\Details.aspx" />
-    <Content Include="Instructors\Edit.aspx" />
-    <Content Include="Instructors\Insert.aspx" />
-    <Content Include="Models\Banner01.Context.tt">
+    <Content Include="Models\BannerDatabase01.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Banner01.edmx</DependentUpon>
-      <LastGenOutput>Banner01.Context.cs</LastGenOutput>
+      <DependentUpon>BannerDatabase01.edmx</DependentUpon>
+      <LastGenOutput>BannerDatabase01.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\Banner01.edmx.diagram">
-      <DependentUpon>Banner01.edmx</DependentUpon>
+    <Content Include="Models\BannerDatabase01.edmx.diagram">
+      <DependentUpon>BannerDatabase01.edmx</DependentUpon>
     </Content>
-    <Content Include="Models\Banner01.tt">
+    <Content Include="Models\BannerDatabase01.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Banner01.edmx</DependentUpon>
-      <LastGenOutput>Banner01.cs</LastGenOutput>
-    </Content>
-    <EntityDeploy Include="Models\StudentDatabase.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>StudentDatabase.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\StudentDatabase.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>StudentDatabase.edmx</DependentUpon>
-      <LastGenOutput>StudentDatabase.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\StudentDatabase.edmx.diagram">
-      <DependentUpon>StudentDatabase.edmx</DependentUpon>
-    </Content>
-    <Content Include="Models\StudentDatabase.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>StudentDatabase.edmx</DependentUpon>
-      <LastGenOutput>StudentDatabase.cs</LastGenOutput>
+      <DependentUpon>BannerDatabase01.edmx</DependentUpon>
+      <LastGenOutput>BannerDatabase01.cs</LastGenOutput>
     </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -190,9 +158,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Account\Login.aspx" />
-    <Content Include="Account\Logout.aspx" />
-    <Content Include="Account\Register.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Register.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -208,10 +176,11 @@
     <Content Include="Img\policies\2.png" />
     <Content Include="Img\policies\3.png" />
     <Content Include="Img\SchoolLogoHD.png" />
-    <Content Include="Img\Slider\1.jpg" />
-    <Content Include="Img\Slider\2.jpg" />
-    <Content Include="other\Policies.aspx" />
-    <Content Include="other\TermsConditons.aspx" />
+    <Content Include="Other\Campus.aspx" />
+    <Content Include="Other\Library.aspx" />
+    <Content Include="Other\Parking.aspx" />
+    <Content Include="Other\Policies.aspx" />
+    <Content Include="Other\Terms.aspx" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -219,9 +188,31 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Pages\Department.aspx" />
-    <Content Include="Programs\Full-Times\Full-Time-Programs.aspx" />
-    <Content Include="Programs\Part-Times\Part-Time-Programs.aspx" />
+    <Content Include="Programs\Courses\Default.aspx" />
+    <Content Include="Programs\Courses\Delete.aspx" />
+    <Content Include="Programs\Courses\Details.aspx" />
+    <Content Include="Programs\Courses\Edit.aspx" />
+    <Content Include="Programs\Courses\Insert.aspx" />
+    <Content Include="Programs\Enrollments\Default.aspx" />
+    <Content Include="Programs\Enrollments\Delete.aspx" />
+    <Content Include="Programs\Enrollments\Details.aspx" />
+    <Content Include="Programs\Enrollments\Edit.aspx" />
+    <Content Include="Programs\Enrollments\Insert.aspx" />
+    <Content Include="Programs\Instructors\Default.aspx" />
+    <Content Include="Programs\Instructors\Delete.aspx" />
+    <Content Include="Programs\Instructors\Details.aspx" />
+    <Content Include="Programs\Instructors\Edit.aspx" />
+    <Content Include="Programs\Instructors\Insert.aspx" />
+    <Content Include="Programs\Programs\Default.aspx" />
+    <Content Include="Programs\Programs\Delete.aspx" />
+    <Content Include="Programs\Programs\Details.aspx" />
+    <Content Include="Programs\Programs\Edit.aspx" />
+    <Content Include="Programs\Programs\Insert.aspx" />
+    <Content Include="Programs\Students\Default.aspx" />
+    <Content Include="Programs\Students\Delete.aspx" />
+    <Content Include="Programs\Students\Details.aspx" />
+    <Content Include="Programs\Students\Edit.aspx" />
+    <Content Include="Programs\Students\Insert.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Main.Master" />
@@ -258,13 +249,7 @@
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
-    <Content Include="StudentAccount\StudentLogins\StudentRegister.aspx" />
-    <Content Include="StudentAccount\Welcome.aspx" />
-    <Content Include="Students\Default.aspx" />
-    <Content Include="Students\Delete.aspx" />
-    <Content Include="Students\Details.aspx" />
-    <Content Include="Students\Edit.aspx" />
-    <Content Include="Students\Insert.aspx" />
+    <Content Include="ViewData\FT-Courses.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -273,63 +258,28 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account\Login.aspx.cs">
+    <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Account\Login.aspx.designer.cs">
+    <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Account\Logout.aspx.cs">
+    <Compile Include="Logout.aspx.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Account\Logout.aspx.designer.cs">
+    <Compile Include="Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Account\Register.aspx.cs">
+    <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Account\Register.aspx.designer.cs">
+    <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Courses\Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Courses\Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Courses\Delete.aspx.cs">
-      <DependentUpon>Delete.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Courses\Delete.aspx.designer.cs">
-      <DependentUpon>Delete.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Courses\Details.aspx.cs">
-      <DependentUpon>Details.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Courses\Details.aspx.designer.cs">
-      <DependentUpon>Details.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Courses\Edit.aspx.cs">
-      <DependentUpon>Edit.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Courses\Edit.aspx.designer.cs">
-      <DependentUpon>Edit.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Courses\Insert.aspx.cs">
-      <DependentUpon>Insert.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Courses\Insert.aspx.designer.cs">
-      <DependentUpon>Insert.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -337,41 +287,7 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Departments\Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Departments\Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Departments\Delete.aspx.cs">
-      <DependentUpon>Delete.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Departments\Delete.aspx.designer.cs">
-      <DependentUpon>Delete.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Departments\Details.aspx.cs">
-      <DependentUpon>Details.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Departments\Details.aspx.designer.cs">
-      <DependentUpon>Details.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Departments\Edit.aspx.cs">
-      <DependentUpon>Edit.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Departments\Edit.aspx.designer.cs">
-      <DependentUpon>Edit.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Departments\Insert.aspx.cs">
-      <DependentUpon>Insert.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Departments\Insert.aspx.designer.cs">
-      <DependentUpon>Insert.aspx</DependentUpon>
-    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Banner01.cs" />
     <Compile Include="DynamicData\FieldTemplates\Boolean.ascx.cs">
       <DependentUpon>Boolean.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -498,78 +414,8 @@
     <Compile Include="DynamicData\FieldTemplates\Url_Edit.ascx.designer.cs">
       <DependentUpon>Url_Edit.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Enrollments\Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Enrollments\Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Enrollments\Delete.aspx.cs">
-      <DependentUpon>Delete.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Enrollments\Delete.aspx.designer.cs">
-      <DependentUpon>Delete.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Enrollments\Details.aspx.cs">
-      <DependentUpon>Details.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Enrollments\Details.aspx.designer.cs">
-      <DependentUpon>Details.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Enrollments\Edit.aspx.cs">
-      <DependentUpon>Edit.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Enrollments\Edit.aspx.designer.cs">
-      <DependentUpon>Edit.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Enrollments\Insert.aspx.cs">
-      <DependentUpon>Insert.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Enrollments\Insert.aspx.designer.cs">
-      <DependentUpon>Insert.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Instructors\Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Instructors\Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Instructors\Delete.aspx.cs">
-      <DependentUpon>Delete.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Instructors\Delete.aspx.designer.cs">
-      <DependentUpon>Delete.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Instructors\Details.aspx.cs">
-      <DependentUpon>Details.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Instructors\Details.aspx.designer.cs">
-      <DependentUpon>Details.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Instructors\Edit.aspx.cs">
-      <DependentUpon>Edit.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Instructors\Edit.aspx.designer.cs">
-      <DependentUpon>Edit.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Instructors\Insert.aspx.cs">
-      <DependentUpon>Insert.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Instructors\Insert.aspx.designer.cs">
-      <DependentUpon>Insert.aspx</DependentUpon>
     </Compile>
     <Compile Include="Main.Master.cs">
       <DependentUpon>Main.Master</DependentUpon>
@@ -578,100 +424,245 @@
     <Compile Include="Main.Master.designer.cs">
       <DependentUpon>Main.Master</DependentUpon>
     </Compile>
-    <Compile Include="Models\AspNetRole.cs">
-      <DependentUpon>StudentDatabase.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\AspNetUser.cs">
-      <DependentUpon>StudentDatabase.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\AspNetUserClaim.cs">
-      <DependentUpon>StudentDatabase.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\AspNetUserLogin.cs">
-      <DependentUpon>StudentDatabase.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Banner01.Context.cs">
+    <Compile Include="Models\BannerDatabase01.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Banner01.Context.tt</DependentUpon>
+      <DependentUpon>BannerDatabase01.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Banner01.cs">
+    <Compile Include="Models\BannerDatabase01.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Banner01.tt</DependentUpon>
+      <DependentUpon>BannerDatabase01.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Banner01.Designer.cs">
+    <Compile Include="Models\BannerDatabase01.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Banner01.edmx</DependentUpon>
+      <DependentUpon>BannerDatabase01.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Courses.cs">
-      <DependentUpon>Banner01.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\C__MigrationHistory.cs">
-      <DependentUpon>StudentDatabase.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Department.cs">
-      <DependentUpon>Banner01.tt</DependentUpon>
+      <DependentUpon>BannerDatabase01.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Enrollment.cs">
-      <DependentUpon>Banner01.tt</DependentUpon>
+      <DependentUpon>BannerDatabase01.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Instructor.cs">
-      <DependentUpon>Banner01.tt</DependentUpon>
+      <DependentUpon>BannerDatabase01.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Program.cs">
+      <DependentUpon>BannerDatabase01.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Student.cs">
-      <DependentUpon>Banner01.tt</DependentUpon>
+      <DependentUpon>BannerDatabase01.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\StudentDatabase.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>StudentDatabase.Context.tt</DependentUpon>
+    <Compile Include="Other\Campus.aspx.cs">
+      <DependentUpon>Campus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Models\StudentDatabase.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>StudentDatabase.tt</DependentUpon>
+    <Compile Include="Other\Campus.aspx.designer.cs">
+      <DependentUpon>Campus.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Models\StudentDatabase.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>StudentDatabase.edmx</DependentUpon>
+    <Compile Include="Other\Library.aspx.cs">
+      <DependentUpon>Library.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="other\Policies.aspx.cs">
+    <Compile Include="Other\Library.aspx.designer.cs">
+      <DependentUpon>Library.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Other\Parking.aspx.cs">
+      <DependentUpon>Parking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Other\Parking.aspx.designer.cs">
+      <DependentUpon>Parking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Other\Policies.aspx.cs">
       <DependentUpon>Policies.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="other\Policies.aspx.designer.cs">
+    <Compile Include="Other\Policies.aspx.designer.cs">
       <DependentUpon>Policies.aspx</DependentUpon>
     </Compile>
-    <Compile Include="other\TermsConditons.aspx.cs">
-      <DependentUpon>TermsConditons.aspx</DependentUpon>
+    <Compile Include="Other\TermsConditons.aspx.cs">
+      <DependentUpon>Terms.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="other\TermsConditons.aspx.designer.cs">
-      <DependentUpon>TermsConditons.aspx</DependentUpon>
+    <Compile Include="Other\TermsConditons.aspx.designer.cs">
+      <DependentUpon>Terms.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Department.aspx.cs">
-      <DependentUpon>Department.aspx</DependentUpon>
+    <Compile Include="Programs\Courses\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\Department.aspx.designer.cs">
-      <DependentUpon>Department.aspx</DependentUpon>
+    <Compile Include="Programs\Courses\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Programs\Full-Times\Full-Time-Programs.aspx.cs">
-      <DependentUpon>Full-Time-Programs.aspx</DependentUpon>
+    <Compile Include="Programs\Courses\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Programs\Full-Times\Full-Time-Programs.aspx.designer.cs">
-      <DependentUpon>Full-Time-Programs.aspx</DependentUpon>
+    <Compile Include="Programs\Courses\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Programs\Part-Times\Part-Time-Programs.aspx.cs">
-      <DependentUpon>Part-Time-Programs.aspx</DependentUpon>
+    <Compile Include="Programs\Courses\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Programs\Part-Times\Part-Time-Programs.aspx.designer.cs">
-      <DependentUpon>Part-Time-Programs.aspx</DependentUpon>
+    <Compile Include="Programs\Courses\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Courses\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Courses\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Courses\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Courses\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Enrollments\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Enrollments\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Enrollments\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Enrollments\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Enrollments\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Enrollments\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Enrollments\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Enrollments\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Enrollments\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Enrollments\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Instructors\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Instructors\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Instructors\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Instructors\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Instructors\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Instructors\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Instructors\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Instructors\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Instructors\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Instructors\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Programs\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Programs\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Programs\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Programs\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Programs\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Programs\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Programs\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Programs\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Programs\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Programs\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Students\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Students\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Students\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Students\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Students\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Students\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Students\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Students\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Students\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Students\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Mobile.Master.cs">
@@ -682,54 +673,12 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
-    <Compile Include="StudentAccount\StudentLogins\StudentRegister.aspx.cs">
-      <DependentUpon>StudentRegister.aspx</DependentUpon>
+    <Compile Include="ViewData\FT-Courses.aspx.cs">
+      <DependentUpon>FT-Courses.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="StudentAccount\StudentLogins\StudentRegister.aspx.designer.cs">
-      <DependentUpon>StudentRegister.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="StudentAccount\Welcome.aspx.cs">
-      <DependentUpon>Welcome.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="StudentAccount\Welcome.aspx.designer.cs">
-      <DependentUpon>Welcome.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Students\Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Students\Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Students\Delete.aspx.cs">
-      <DependentUpon>Delete.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Students\Delete.aspx.designer.cs">
-      <DependentUpon>Delete.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Students\Details.aspx.cs">
-      <DependentUpon>Details.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Students\Details.aspx.designer.cs">
-      <DependentUpon>Details.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Students\Edit.aspx.cs">
-      <DependentUpon>Edit.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Students\Edit.aspx.designer.cs">
-      <DependentUpon>Edit.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Students\Insert.aspx.cs">
-      <DependentUpon>Insert.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Students\Insert.aspx.designer.cs">
-      <DependentUpon>Insert.aspx</DependentUpon>
+    <Compile Include="ViewData\FT-Courses.aspx.designer.cs">
+      <DependentUpon>FT-Courses.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

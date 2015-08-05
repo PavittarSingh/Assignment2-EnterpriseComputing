@@ -32,7 +32,18 @@
                     <img src="Img/Slider/2.jpg"  alt="Slider image">
                     <div class="carousel-caption intro-text"></div>
                 </div>
-
+                <div class="item">
+                    <img src="Img/Slider/3.jpg"  alt="Slider image">
+                    <div class="carousel-caption intro-text"></div>
+                </div>
+                 <div class="item">
+                    <img src="Img/Slider/4.jpg"  alt="Slider image">
+                    <div class="carousel-caption intro-text"></div>
+                </div>
+                 <div class="item">
+                    <img src="Img/Slider/5.jpg"  alt="Slider image">
+                    <div class="carousel-caption intro-text"></div>
+                </div>
               
                
                 <!-- end carousel-inner -->

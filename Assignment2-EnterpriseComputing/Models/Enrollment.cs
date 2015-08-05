@@ -17,7 +17,8 @@ namespace Assignment2_EnterpriseComputing.Models
         public int EnrollmentID { get; set; }
         public int CourseID { get; set; }
         public int StudentID { get; set; }
-        public Nullable<int> Grade { get; set; }
+        public string Student_Types { get; set; }
+        public string Student_Status { get; set; }
     
         public virtual Courses Courses { get; set; }
         public virtual Student Student { get; set; }

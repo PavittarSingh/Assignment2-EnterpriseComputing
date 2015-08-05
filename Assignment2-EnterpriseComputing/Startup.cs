@@ -19,6 +19,7 @@ namespace Assignment2_EnterpriseComputing
             {
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
                 LoginPath = new PathString("/Login")
+
             });
         }
     }

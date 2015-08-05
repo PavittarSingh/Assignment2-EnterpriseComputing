@@ -17,11 +17,10 @@ namespace Assignment2_EnterpriseComputing.Models
         public int InstructorID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
-        public string Salt { get; set; }
-        public int DepartmentID { get; set; }
+        public string Service_Status { get; set; }
+        public string Specialization { get; set; }
+        public int ProgramID { get; set; }
     
-        public virtual Department Department { get; set; }
+        public virtual Program Program { get; set; }
     }
 }

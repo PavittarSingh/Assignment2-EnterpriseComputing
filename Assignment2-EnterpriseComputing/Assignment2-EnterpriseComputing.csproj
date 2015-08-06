@@ -169,6 +169,23 @@
       <DependentUpon>Users.edmx</DependentUpon>
       <LastGenOutput>Users.cs</LastGenOutput>
     </Content>
+    <EntityDeploy Include="Models\AzureDataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AzureDataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\AzureDataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AzureDataModel.edmx</DependentUpon>
+      <LastGenOutput>AzureDataModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\AzureDataModel.edmx.diagram">
+      <DependentUpon>AzureDataModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\AzureDataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AzureDataModel.edmx</DependentUpon>
+      <LastGenOutput>AzureDataModel.cs</LastGenOutput>
+    </Content>
     <None Include="Properties\PublishProfiles\bluerivercollege.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -314,6 +331,21 @@
     </Compile>
     <Compile Include="Models\AspNetUserLogin.cs">
       <DependentUpon>Users.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AzureDataModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AzureDataModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AzureDataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AzureDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AzureDataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AzureDataModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\C__MigrationHistory.cs">
       <DependentUpon>Users.tt</DependentUpon>
@@ -501,19 +533,19 @@
       <DependentUpon>BannerDatabase01.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Courses.cs">
-      <DependentUpon>BannerDatabase01.tt</DependentUpon>
+      <DependentUpon>AzureDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Enrollment.cs">
-      <DependentUpon>BannerDatabase01.tt</DependentUpon>
+      <DependentUpon>AzureDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Instructor.cs">
-      <DependentUpon>BannerDatabase01.tt</DependentUpon>
+      <DependentUpon>AzureDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Program.cs">
-      <DependentUpon>BannerDatabase01.tt</DependentUpon>
+      <DependentUpon>AzureDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Student.cs">
-      <DependentUpon>BannerDatabase01.tt</DependentUpon>
+      <DependentUpon>AzureDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Other\Campus.aspx.cs">
       <DependentUpon>Campus.aspx</DependentUpon>

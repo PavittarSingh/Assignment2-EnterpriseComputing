@@ -33,7 +33,7 @@
                   <asp:Button runat="server" OnClick="SignIn" Text="Log in" />
                </div>
             </div>
-             <%--<div class="form-group">
+             <div class="form-group">
                                     
                                         
                                             Don't have Login! 
@@ -41,7 +41,7 @@
                                         <a href="Register.aspx" onClick="$('#loginbox').hide(); $('#signupbox').show()">
                                             Sign Up Here
                                         </a>
-                                        </div>--%>
+                                        </div>
                                  
                                    
 

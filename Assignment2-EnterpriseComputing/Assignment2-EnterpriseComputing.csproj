@@ -128,6 +128,8 @@
     <Content Include="DynamicData\FieldTemplates\Text_Edit.ascx" />
     <Content Include="DynamicData\FieldTemplates\Url.ascx" />
     <Content Include="DynamicData\FieldTemplates\Url_Edit.ascx" />
+    <Content Include="ErrorPage.aspx" />
+    <Content Include="Img\icon.ico" />
     <Content Include="Img\Slider\1.jpg" />
     <Content Include="Img\Slider\2.jpg" />
     <Content Include="Img\Slider\3.jpg" />
@@ -278,6 +280,14 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logic\ExceptionUtility.cs" />
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

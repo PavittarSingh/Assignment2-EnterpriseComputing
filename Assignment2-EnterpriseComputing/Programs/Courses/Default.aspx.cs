@@ -15,6 +15,7 @@ namespace Assignment2_EnterpriseComputing.Programs.Courses
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            
         }
 
         // Model binding method to get List of Courses entries

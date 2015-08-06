@@ -34,7 +34,7 @@
                </div>
             </div>
              <div class="form-group">
-                                    
+                                      <!---Extra Sign up option-->
                                         
                                             Don't have Login! 
                  <br>

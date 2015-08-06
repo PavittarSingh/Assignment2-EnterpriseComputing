@@ -2,8 +2,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+      <!---Slider on home page using bootstrap -->
      <header>
         <div class="carousel slide" id="gallery-carousel" data-ride="carousel">
+              <!--Indicators--->
             <ol class="carousel-indicators">
                 <li data-target="#gallery-carousel" data-slide-to="0" class="active"></li>
                 <li data-target="#gallery-carousel" data-slide-to="1"></li>
@@ -11,14 +13,10 @@
                 <li data-target="#gallery-carousel" data-slide-to="3"></li>
                 <li data-target="#gallery-carousel" data-slide-to="4"></li>
                 <li data-target="#gallery-carousel" data-slide-to="5"></li>
-                <li data-target="#gallery-carousel" data-slide-to="6"></li>
-                <li data-target="#gallery-carousel" data-slide-to="7"></li>
-                <li data-target="#gallery-carousel" data-slide-to="8"></li>
-                <li data-target="#gallery-carousel" data-slide-to="9"></li>
-                <li data-target="#gallery-carousel" data-slide-to="10"></li>
+               
 
             </ol>
-          
+            <!---Images for slider-->
             <div class="carousel-inner">
                 <div class="item active">
                     <img src="Img/Slider/1.jpg" alt="Slider image">

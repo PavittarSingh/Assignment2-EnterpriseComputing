@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Assignment2_EnterpriseComputing.Other
 {
-    public partial class Library : System.Web.UI.Page
+    public partial class AboutUS : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

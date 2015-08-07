@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Assignment2_EnterpriseComputing.Other
+namespace Assignment2_EnterpriseComputing
 {
 
 
-    public partial class Library
+    public partial class _404
     {
     }
 }

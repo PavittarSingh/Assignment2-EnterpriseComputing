@@ -110,6 +110,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="404.aspx" />
     <Content Include="DynamicData\FieldTemplates\Boolean.ascx" />
     <Content Include="DynamicData\FieldTemplates\Boolean_Edit.ascx" />
     <Content Include="DynamicData\FieldTemplates\Children.ascx" />
@@ -129,16 +130,19 @@
     <Content Include="DynamicData\FieldTemplates\Url.ascx" />
     <Content Include="DynamicData\FieldTemplates\Url_Edit.ascx" />
     <Content Include="ErrorPage.aspx" />
+    <Content Include="Img\error.png" />
     <Content Include="Img\icon.ico" />
     <Content Include="Img\Slider\1.jpg" />
     <Content Include="Img\Slider\2.jpg" />
     <Content Include="Img\Slider\3.jpg" />
     <Content Include="Img\Slider\4.jpg" />
     <Content Include="Img\Slider\5.jpg" />
+    <Content Include="Contact.aspx" />
     <EntityDeploy Include="Models\BannerDatabase01.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>BannerDatabase01.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <Content Include="mail\contact_me.php" />
     <Content Include="Models\BannerDatabase01.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>BannerDatabase01.edmx</DependentUpon>
@@ -197,6 +201,9 @@
   <ItemGroup>
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
+    <Content Include="Other\AboutUS.aspx" />
+    <Content Include="Other\Email.aspx" />
+    <Content Include="Other\SocialMedia.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -214,8 +221,6 @@
     <Content Include="Img\policies\3.png" />
     <Content Include="Img\SchoolLogoHD.png" />
     <Content Include="Other\Campus.aspx" />
-    <Content Include="Other\Library.aspx" />
-    <Content Include="Other\Parking.aspx" />
     <Content Include="Other\Policies.aspx" />
     <Content Include="Other\Terms.aspx" />
     <Content Include="packages.config" />
@@ -284,6 +289,7 @@
     <Content Include="font-awesome\scss\_stacked.scss" />
     <Content Include="font-awesome\scss\_variables.scss" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="Scripts\mail.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
     <Content Include="Users\Users.aspx" />
@@ -298,6 +304,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="404.aspx.designer.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ErrorPage.aspx.cs">
       <DependentUpon>ErrorPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -364,6 +377,27 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Users.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Other\AboutUS.aspx.cs">
+      <DependentUpon>AboutUS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Other\AboutUS.aspx.designer.cs">
+      <DependentUpon>AboutUS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Other\Email.aspx.cs">
+      <DependentUpon>Email.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Other\Email.aspx.designer.cs">
+      <DependentUpon>Email.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Other\SocialMedia.aspx.cs">
+      <DependentUpon>SocialMedia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Other\SocialMedia.aspx.designer.cs">
+      <DependentUpon>SocialMedia.aspx</DependentUpon>
     </Compile>
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
@@ -553,20 +587,6 @@
     </Compile>
     <Compile Include="Other\Campus.aspx.designer.cs">
       <DependentUpon>Campus.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Other\Library.aspx.cs">
-      <DependentUpon>Library.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Other\Library.aspx.designer.cs">
-      <DependentUpon>Library.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Other\Parking.aspx.cs">
-      <DependentUpon>Parking.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Other\Parking.aspx.designer.cs">
-      <DependentUpon>Parking.aspx</DependentUpon>
     </Compile>
     <Compile Include="Other\Policies.aspx.cs">
       <DependentUpon>Policies.aspx</DependentUpon>
@@ -800,6 +820,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

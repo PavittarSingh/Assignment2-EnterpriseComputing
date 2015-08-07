@@ -11,7 +11,7 @@ namespace Assignment2_EnterpriseComputing.Other
 {
 
 
-    public partial class Parking
+    public partial class Email
     {
     }
 }
